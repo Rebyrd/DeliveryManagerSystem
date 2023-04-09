@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: DeliveryManagerSystem.GUI
+Class-Path: lib\ojdbc6-12.1.0.1-atlassian-hosted.jar
+

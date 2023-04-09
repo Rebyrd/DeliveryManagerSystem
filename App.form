@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="DeliveryManagerSystem.App">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="619" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-11645362"/>
+      <foreground color="-12828863"/>
+      <inheritsPopupMenu value="false"/>
+      <opaque value="true"/>
+      <preferredSize width="500" height="300"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="21890" binding="cardPanel" layout-manager="CardLayout" hgap="0" vgap="0" show="5eb80">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <opaque value="false"/>
+        </properties>
+        <border type="line">
+          <color color="-13816531"/>
+        </border>
+        <children>
+          <grid id="29c85" binding="searchPanel" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <card name="search"/>
+            </constraints>
+            <properties>
+              <name value=""/>
+              <opaque value="false"/>
+            </properties>
+            <border type="line" title="查找">
+              <font/>
+              <title-color color="-4473925"/>
+              <color color="-12828863"/>
+            </border>
+            <children>
+              <component id="b9a63" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="240" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <caretColor color="-4473925"/>
+                  <disabledTextColor color="-6243399"/>
+                  <foreground color="-4473925"/>
+                  <opaque value="false"/>
+                  <selectedTextColor color="-11184811"/>
+                </properties>
+              </component>
+              <component id="e509c" class="javax.swing.JButton" binding="查找Button" default-binding="true">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="60" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11184811"/>
+                  <contentAreaFilled value="false"/>
+                  <focusPainted value="false"/>
+                  <foreground color="-4473925"/>
+                  <opaque value="false"/>
+                  <requestFocusEnabled value="true"/>
+                  <text value="查找"/>
+                </properties>
+              </component>
+              <component id="78480" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11184811"/>
+                  <foreground color="-4473925"/>
+                  <model>
+                    <item value="User Id"/>
+                    <item value="Date"/>
+                  </model>
+                  <opaque value="false"/>
+                </properties>
+              </component>
+              <hspacer id="5c087">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <vspacer id="9049">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="2" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                    <preferred-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+              </vspacer>
+              <scrollpane id="66e33">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12828863"/>
+                  <foreground color="-11184811"/>
+                  <opaque value="false"/>
+                </properties>
+                <border type="line">
+                  <color color="-13816531"/>
+                </border>
+                <children>
+                  <component id="a29d8" class="javax.swing.JTable" binding="table1" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <background color="-7303024"/>
+                      <foreground color="-11645362"/>
+                      <gridColor color="-4473925"/>
+                      <opaque value="false"/>
+                      <selectionBackground color="-11184811"/>
+                      <selectionForeground color="-4473925"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <component id="85880" class="javax.swing.JButton" binding="update">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="60" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11184811"/>
+                  <contentAreaFilled value="false"/>
+                  <focusPainted value="false"/>
+                  <foreground color="-4473925"/>
+                  <opaque value="false"/>
+                  <requestFocusEnabled value="true"/>
+                  <text value="保存"/>
+                  <visible value="false"/>
+                </properties>
+              </component>
+              <hspacer id="e24">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+          <grid id="5eb80" binding="managePanel" layout-manager="GridLayoutManager" row-count="3" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <card name="manage"/>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="c11a3" class="javax.swing.JButton" binding="statistics">
+                <constraints>
+                  <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="60" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11184811"/>
+                  <contentAreaFilled value="false"/>
+                  <focusPainted value="false"/>
+                  <foreground color="-4473925"/>
+                  <opaque value="false"/>
+                  <requestFocusEnabled value="true"/>
+                  <text value="统计销售金额"/>
+                </properties>
+              </component>
+              <component id="7dd04" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-4473925"/>
+                  <text value="从"/>
+                </properties>
+              </component>
+              <component id="2d9e7" class="javax.swing.JTextField" binding="start">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="80" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <caretColor color="-4473925"/>
+                  <disabledTextColor color="-6243399"/>
+                  <foreground color="-4473925"/>
+                  <opaque value="false"/>
+                  <selectedTextColor color="-11184811"/>
+                  <toolTipText value="起始时间 年-月-日"/>
+                </properties>
+              </component>
+              <component id="67bf7" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-4473925"/>
+                  <text value="到"/>
+                </properties>
+              </component>
+              <component id="b7785" class="javax.swing.JTextField" binding="end">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="80" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <caretColor color="-4473925"/>
+                  <disabledTextColor color="-6243399"/>
+                  <foreground color="-4473925"/>
+                  <opaque value="false"/>
+                  <selectedTextColor color="-11184811"/>
+                  <text value=""/>
+                  <toolTipText value="结束时间 年-月-日"/>
+                </properties>
+              </component>
+              <component id="8f9e" class="javax.swing.JButton" binding="userTable">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="60" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11184811"/>
+                  <contentAreaFilled value="false"/>
+                  <focusPainted value="false"/>
+                  <foreground color="-4473925"/>
+                  <opaque value="false"/>
+                  <requestFocusEnabled value="true"/>
+                  <text value="生成用户表"/>
+                </properties>
+              </component>
+              <component id="61983" class="javax.swing.JButton" binding="inventory">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="60" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11184811"/>
+                  <contentAreaFilled value="false"/>
+                  <focusPainted value="false"/>
+                  <foreground color="-4473925"/>
+                  <opaque value="false"/>
+                  <requestFocusEnabled value="true"/>
+                  <text value="生成今天的送货清单"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="ffa6a" binding="insertPanel" layout-manager="GridLayoutManager" row-count="4" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <card name="insert"/>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+            <border type="line" title="添加">
+              <font/>
+              <title-color color="-4473925"/>
+              <color color="-12828863"/>
+            </border>
+            <children>
+              <component id="dc3be" class="javax.swing.JButton" binding="insert">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="60" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11184811"/>
+                  <contentAreaFilled value="false"/>
+                  <focusPainted value="false"/>
+                  <foreground color="-4473925"/>
+                  <opaque value="false"/>
+                  <requestFocusEnabled value="true"/>
+                  <text value="添加"/>
+                </properties>
+              </component>
+              <vspacer id="22e68">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="2" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                    <preferred-size width="-1" height="10"/>
+                  </grid>
+                </constraints>
+              </vspacer>
+              <scrollpane id="e2889">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-11645362"/>
+                  <opaque value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="f40e3" class="javax.swing.JTable" binding="table2" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <autoCreateRowSorter value="false"/>
+                      <background color="-7303024"/>
+                      <dropMode value="USE_SELECTION"/>
+                      <editingColumn value="-1"/>
+                      <editingRow value="-1"/>
+                      <fillsViewportHeight value="false"/>
+                      <gridColor color="-4473925"/>
+                      <inheritsPopupMenu value="false"/>
+                      <intercellSpacing width="1" height="1"/>
+                      <opaque value="false"/>
+                      <selectionBackground color="-11184811"/>
+                      <selectionForeground color="-4473925"/>
+                    </properties>
+                    <clientProperties>
+                      <JTable.autoStartsEdit class="java.lang.Boolean" value="false"/>
+                      <Table.isFileList class="java.lang.Boolean" value="false"/>
+                      <terminateEditOnFocusLost class="java.lang.Boolean" value="false"/>
+                    </clientProperties>
+                  </component>
+                </children>
+              </scrollpane>
+              <component id="c9ea0" class="javax.swing.JLabel" binding="labelUser">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-4473925"/>
+                  <text value="User Id"/>
+                </properties>
+              </component>
+              <hspacer id="b974c">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="54900">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <component id="1a6d6" class="javax.swing.JTextField" binding="textUser">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <caretColor color="-4473925"/>
+                  <disabledTextColor color="-6243399"/>
+                  <foreground color="-4473925"/>
+                  <opaque value="false"/>
+                  <selectedTextColor color="-11184811"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="4f164" binding="tabsPanel" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11645362"/>
+          <foreground color="-4473925"/>
+          <opaque value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <hspacer id="40afe">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="24601">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="eacb5" class="javax.swing.JButton" binding="button3">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <actionCommand value=""/>
+              <autoscrolls value="false"/>
+              <background color="-11184811"/>
+              <borderPainted value="false"/>
+              <contentAreaFilled value="false"/>
+              <focusPainted value="false"/>
+              <foreground color="-4473925"/>
+              <name value="insert"/>
+              <opaque value="false"/>
+              <requestFocusEnabled value="true"/>
+              <selected value="false"/>
+              <text value="添加"/>
+            </properties>
+            <clientProperties>
+              <hideActionText class="java.lang.Boolean" value="false"/>
+            </clientProperties>
+          </component>
+          <component id="e9733" class="javax.swing.JButton" binding="button1" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-11184811"/>
+              <borderPainted value="false"/>
+              <contentAreaFilled value="false"/>
+              <focusPainted value="false"/>
+              <focusable value="true"/>
+              <foreground color="-4473925"/>
+              <name value="manage"/>
+              <opaque value="false"/>
+              <text value="管理"/>
+            </properties>
+          </component>
+          <component id="938e0" class="javax.swing.JButton" binding="button2" default-binding="true">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-11184811"/>
+              <borderPainted value="false"/>
+              <contentAreaFilled value="false"/>
+              <focusPainted value="false"/>
+              <foreground color="-4473925"/>
+              <name value="search"/>
+              <opaque value="false"/>
+              <text value="查找"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
